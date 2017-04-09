@@ -2,9 +2,10 @@ var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
 var schema = mongoose.Schema({
-   userid: Number,
-   username: String,
-   password: String,
+   //id van automatikusan??? (_id)
+   username: {type: String, required: true},
+   password: {type: String, required: true},
+   email: String,
    szobaszam: Number
 });
 

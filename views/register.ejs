@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="loginRegister">
+      <p>Regisztrálás</p>
+
+      <form action="/users/new" method="post">
+        <input type="text" name="username" value="<%- user.username %>">
+        <input type="password" name="password" value="<%- user.password %>">
+        <input type="text" name="email" value="<%- user.email %>">
+        <input type="text" name="szobaszam" value="<%- user.szobaszam %>">
+        <input type="submit" name="" value="asd">
+      </form>
+
+
+    </div>
+  </body>
+</html>

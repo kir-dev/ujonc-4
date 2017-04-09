@@ -6,11 +6,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var index = require('./routes/index');
-var users = require('./routes/users');
+var users = require('./routes/user');
 
+var Product = require('./models/product');
 var app = express();
 
-//var User = require('./models/user');
+
 
 mongoose.Promise = require('bluebird');
 mongoose.connect('mongodb://localhost/ujonc');

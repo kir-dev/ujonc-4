@@ -106,18 +106,39 @@ body{
   border-bottom: 1px solid #ededed;
 }
 .wrapper .listBox .itemContainer .item span{
-  line-height: 40px;
-
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
   font-size: 14px;
 }
 .item .productname{
-  padding: 0px 20px 0px 50px;
-}
-.item .productauthor{
-  float: right;
-  padding: 0px 30px;
+
+  width: 20%;
 }
 .item .productdate{
-  float: right;
-  padding: 0px 30px;
+  width: 20%;
+}
+.item .productprice{
+  width: 10%;
+}
+.item .productamount{
+  width: 10%;
+}
+.item .comment{
+  width: 25%;
+}
+.item .reserve{
+  width: 10%;
+}
+.item #free{
+  background: #4286f4;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.item #reserved{
+  background: #ffa126;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
 }

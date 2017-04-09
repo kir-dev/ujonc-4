@@ -45,6 +45,14 @@ body{
     margin: 10px auto;
     font-size: 17px;
 }
+.loginRegister form input[type="password"]{
+    background: #e8e8e8;
+    color: #757575;
+    border: none;
+    padding: 5px 5px;
+    margin: 10px auto;
+    font-size: 17px;
+}
 .loginRegister form input[type="submit"]{
     background: #4286f4;
     color: white;

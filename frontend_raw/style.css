@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: #ededed;
+}
+.wrapper{
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+.loginRegister{
+  width: 20%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
+  box-shadow: 0px 0px 10px 0px rgba(128,128,128,1);
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: white;
+}
+.loginRegister p{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0px;
+}
+.loginRegister form input{
+  display: block;
+
+}
+.loginRegister form input[type="text"]{
+    background: #e8e8e8;
+    color: #757575;
+    border: none;
+    padding: 5px 5px;
+    margin: 10px auto;
+    font-size: 17px;
+}
+.loginRegister form input[type="submit"]{
+    background: #4286f4;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    margin: 20px auto;
+    font-size: 17px;
+}
+.wrapper .listBox{
+  margin-top: 50px;
+  background: white;
+  width: 100%;
+  border-radius: 2px;
+}
+.wrapper .listBox .listBoxHead{
+  width: 100%;
+  position: relative;
+}
+.wrapper .listBox .listBoxHead .addProduct{
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  position: absolute;
+  display: inline-block;
+  background: #18cc4b;
+  border-radius: 5px;
+  color: white;
+}
+.wrapper .listBox .listBoxHead .selectProduct{
+  padding: 20px 30px;
+}
+.wrapper .listBox .listBoxHead .selectProduct a{
+  border: 1px solid #ededed;
+  padding: 5px 10px;
+  display: inline-block;
+}
+.selectProduct #left{
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+}
+.selectProduct #right{
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+}
+.selectProduct .notactive{
+  color: black;
+}
+.selectProduct .active{
+  background: #4286f4;
+  color: white;
+}
+.wrapper .listBox .itemContainer{
+  margin-top: 20px;
+  width: 100%;
+}
+.wrapper .listBox .itemContainer .item{
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+}
+.wrapper .listBox .itemContainer .item span{
+  line-height: 40px;
+
+  font-size: 14px;
+}
+.item .productname{
+  padding: 0px 20px 0px 50px;
+}
+.item .productauthor{
+  float: right;
+  padding: 0px 30px;
+}
+.item .productdate{
+  float: right;
+  padding: 0px 30px;
+}

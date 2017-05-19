@@ -10,6 +10,7 @@ a{
 body{
   background: #ededed;
 }
+
 .wrapper{
   width: 70%;
   margin: 0 auto;
@@ -33,17 +34,20 @@ body{
   font-size: 20px;
   padding: 10px 0px;
 }
-.loginRegister form input{
-  display: block;
-
+.loginRegister span
+{
+    margin: 10px auto;
+    padding: 5px 5px;
+	
 }
-.loginRegister form input[type="text"]{
+.loginRegister form input{
     background: #e8e8e8;
     color: #757575;
     border: none;
     padding: 5px 5px;
     margin: 10px auto;
     font-size: 17px;
+  display: block;
 }
 .loginRegister form input[type="submit"]{
     background: #4286f4;
@@ -53,6 +57,19 @@ body{
     margin: 20px auto;
     font-size: 17px;
 }
+#Registration_button
+{
+	position:absolute;
+	right:20px;
+	top: 40px;
+	border: 1px white solid;
+	border-radius:5px;
+	background-color:red;
+	color:white;
+	text-align:center;
+	padding:10px;
+}
+
 .wrapper .listBox{
   margin-top: 50px;
   background: white;

@@ -7,13 +7,20 @@
   <body>
     <div class="loginRegister">
       <p>Regisztrálás</p>
+	  
 
       <form action="/users/new" method="post">
+		<span class="registration">Felhasználó név:</span>
         <input type="text" name="username" value="<%- user.username %>">
-        <input type="password" name="password" value="<%- user.password %>">
+		<span class="registration">Jelszó:</span>
+        <input type="password" name="password" value="">
+		<span class="registration">Jelszó megerősítése:</span>
+        <input type="password" name="password2" value="">
+		<span class="registration">Email cím:</span>
         <input type="text" name="email" value="<%- user.email %>">
+		<span class="registration">Szobaszám:</span>
         <input type="text" name="szobaszam" value="<%- user.szobaszam %>">
-        <input type="submit" name="" value="asd">
+        <input type="submit" name="" value="Regisztráció">
       </form>
 
 

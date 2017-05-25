@@ -5,18 +5,16 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
   <body>
+    <span><%= error %></span>
     <div class="loginRegister">
       <p>Regisztrálás</p>
-
       <form action="/users/new" method="post">
-        <input type="text" name="username" value="<%- user.username %>">
-        <input type="password" name="password" value="<%- user.password %>">
-        <input type="text" name="email" value="<%- user.email %>">
-        <input type="text" name="szobaszam" value="<%- user.szobaszam %>">
-        <input type="submit" name="" value="asd">
+        <input type="text" name="username" placeholder="Felhasználónév" value="<%- user.username %>">
+        <input type="password" name="password" placeholder="Jelszó" value="<%- user.password %>">
+        <input type="text" name="email" placeholder="Email" value="<%- user.email %>">
+        <input type="text" name="szobaszam" placeholder="Szobaszám" value="<%- user.szobaszam %>">
+        <input type="submit" name="submit" value="asd">
       </form>
-
-
     </div>
   </body>
 </html>

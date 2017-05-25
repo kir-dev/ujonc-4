@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <span><%= error %></span>
+    <div class="loginRegister">
+      <p>Új Termék felvétele</p>
+      <form action="add" method="post">
+        <input type="text" name="productname" placeholder="Termék neve">
+        <input type="text" name="productamount" placeholder="Mennyiség">
+        <input type="text" name="productprice" placeholder="Ár">
+        <input type="text" name="productcomment" placeholder="Megjegyzés">
+        <select name="productcategory" size=”1”>
+          <option value="dohany">Dohány</option>
+          <option value="szen">Szén</option>
+        </select>
+        <input type="submit" placeholder="Submit">
+
+      </form>
+    </div>
+  </body>
+</html>

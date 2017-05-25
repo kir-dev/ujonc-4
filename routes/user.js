@@ -16,7 +16,7 @@ router.get('/login', function(req, res, next) {
 router.post('/new', function(req, res, next){
   var newUser = new User({ username: req.body.username, password: req.body.password, email: req.body.email, szobaszam: req.body.szobaszam });
   newUser.save(function(err, doc){
-    if(err) res.render('register', { user: newUser, error: "Valami nem jó!" });
+    if(err) res.render('register', { user: newUser, error: "Nem megfelelő adatok!" });
     else res.redirect('/');
   });
 });
